@@ -49,7 +49,7 @@ a {
   color: var(--text-primary);
   font-weight: 400;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 a {
@@ -541,12 +541,13 @@ footer .top section ul li a {
   color: var(--text-quaternary);
   font-size: 18px;
 }
+
 footer .top section ul li a:hover {
   color: var(--button-primary);
   text-decoration: none;
 }
 
-footer .bottom   {
+footer .bottom {
   text-align: center;
   padding: 20px;
 }
@@ -554,4 +555,218 @@ footer .bottom   {
 footer .bottom p {
   color: var(--text-quaternary);
   font-size: 18px
+}
+
+
+/* 768px */
+@media (max-width: 768px) {
+  header nav ul {
+    background-color: var(--bg-primary);
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    height: 100vh;
+    display: none;
+    width: 100%;
+    top: 100px;
+    right: 0;
+  }
+
+  header nav ul li a {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  header nav ul.active {
+    display: flex;
+    gap: 20px;
+  }
+
+  header nav .actions .btn-mobile {
+    background-color: transparent;
+    color: var(--button-primary);
+    font-weight: 700;
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+    border: none;
+  }
+
+  header nav .actions .btn {
+    display: none;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  main section {
+    padding: 50px 0px;
+    gap: 20px;
+  }
+
+  main section h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  main section h2 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  main section p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  main section .content {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  main #home .content h1 {
+    font-size: 40px;
+  }
+
+  main #home .content p {
+    font-size: 18px;
+  }
+
+  main #home .content a {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  main #collection .content .cards {
+    overflow-x: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+
+  main #collection .content .cards .card {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  main #collection .content .cards .card img {
+    height: 300px;
+  }
+
+  main #collection .content .cards .card h3 {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  main #collection .content .cards .card button {
+    margin: 0 20px 20px 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  main #collection .content .cards .card p {
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+  }
+
+  main #about .content {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+
+  main #about .content img {
+    max-width: 500px;
+  }
+
+  main #about .content .text {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  main #about .content .text h2 {
+    font-size: 30px;
+  }
+
+   main #about .content .text p {
+     text-align: center;
+     font-size: 18px;
+   }
+
+  main #about .content .text .addtional section h3 {
+    font-size: 18px;
+  }
+
+   main #about .content .text .addtional section p {
+     font-size: 16px;
+   }
+
+  main #testimonials .content {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+
+  main #testimonials .content .review {
+    max-width: 500px;
+    min-height: 400px;
+  }
+
+  main #testimonials .content .review h3 {
+    font-size: 18px;
+  }
+
+  main #testimonials .content .review p {
+    font-size: 16px;
+  }
+
+  main #contact .content {
+    padding: 0;
+    gap: 20px;
+  }
+
+  main #contact .content h1 {
+    font-size: 30px;
+  }
+
+  main #contact .content h3 {
+    font-size: 18px;
+  }
+
+  main #contact .content a {
+    padding: 10px 20px;
+    font-size: 18px
+  }
+
+  footer .top {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  footer .top section h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  footer .top section h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  footer .top section ul li a {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  footer .bottom {
+    text-align: center;
+    padding: 20px 0
+  }
+
+  footer .bottom p {
+    font-size: 16px
+  }
 }
